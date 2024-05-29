@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// //App.js
+// import "bootstrap/dist/css/bootstrap.min.css";
+ //import { lazy, Suspense } from "react";
+// import { cardData } from "./components/mock";
+
+import Feed from "./components/Feed";
+
+//const CardComponent = lazy(() => import("./components/cardComponent"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <h1>React Lazy Loading with Infinite Scroll</h1>
+      <Suspense fallback={<div>isLoading...</div>}>
+        <CardComponent cardData={cardData} />
+      </Suspense> */}
+      <Feed />
     </div>
   );
 }
-
 export default App;
